@@ -1,2 +1,2 @@
 # ERP-system
-a small ERP system for practice
+A small ERP system for practice
