@@ -1,1 +1,19 @@
 
+<!DOCTYPE html>
+<html>
+<head><title>Student Dashboard</title></head>
+<body>
+    <h2>Welcome, {{ user_info[0] }} (Roll: {{ user_info[1] }})</h2>
+    <a href="{{ url_for('logout') }}">Logout</a>
+    
+    <h3>Notices</h3>
+    <ul>
+        {% for notice in notices %}
+            <li><strong>{{ notice[0] }}</strong>: {{ notice[1] }} ({{ notice[2] }})</li>
+        {% endfor %}
+    </ul>
+    
+    <h3>Attendance</h3>
+  
+</body>
+</html>
