@@ -35,6 +35,11 @@
     </ul>
     
     <h3>Attendance Records</h3>
-  
+   <table border="1">
+        <tr><th>Student</th><th>Date</th><th>Status</th></tr>
+        {% for record in attendance %}
+            <tr><td>{{ record[1] }}</td><td>{{ record[2] }}</td><td>{{ record[3] }}</td></tr>
+        {% endfor %}
+    </table>
 </body>
 </html>
