@@ -26,3 +26,12 @@ background-color: #3879da;
 	box-shadow: 0 0 10px rgba(32, 32, 32, 0.5);
 	align-items: center;
  }
+ .submit {
+background-color: #3879da;
+	margin: 10px auto;
+	padding: 10px;
+	width: 80%;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(32, 32, 32, 0.5);
+	align-items: center;
+ }
