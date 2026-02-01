@@ -4,9 +4,12 @@
 <head>
     <meta charset="utf-8">
     <title>Student Dashboard</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+   <link rel="stylesheet" href="{{ url_for('static', filename='stylestudent.css') }}">
 </head>
 <body>
+    <nav class="navbar">
+  <h1>student dashboard</h1>
+    </nav>
     <h2>Welcome, {{ user_info[0] }} (Roll: {{ user_info[1] }})</h2>
     <a href="{{ url_for('logout') }}">Logout</a>
     
