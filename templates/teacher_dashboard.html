@@ -6,18 +6,27 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h2>Teacher Dashboard</h2>
-    <a href="{{ url_for('logout') }}">Logout</a>
-    
+
+    <div class="navbar">
+     <h2>Teacher Dashboard</h2>
+    </div>
+
+    <div class="logout">
+     <a href="{{ url_for('logout') }}">Logout</a>
+    </div>
+
+    <div class="Add_Notices">
     <h3>Add Notice</h3>
-    <form method="POST">
+     <form method="POST">
         <input type="text" name="title" placeholder="Title" required><br>
         <textarea name="content" placeholder="Content" required></textarea><br>
         <button type="submit" name="add_notice">Add Notice</button>
-    </form>
-    
-    <h3>Mark Attendance</h3>
-    <form method="POST">
+     </form>
+    </div>
+
+    <div class="Mark_Attendence">
+    <h3>Mark Attendence</h3>
+     <form method="POST">
         <select name="student_id" required>
             {% for student in students %}
                 <option value="{{ student[0] }}">{{ student[1] }} ({{ student[2] }})</option>
@@ -29,21 +38,25 @@
             <option value="absent">Absent</option>
         </select><br>
         <button type="submit" name="mark_attendance">Mark</button>
-    </form>
-    
-    <h3>Notices</h3>
-    <ul>
+     </form>
+    </div>
+    <div class="Notices">
+     <h3>Notices</h3>
+      <ul>
         {% for notice in notices %}
             <li><strong>{{ notice[1] }}</strong>: {{ notice[2] }} ({{ notice[3] }})</li>
         {% endfor %}
-    </ul>
+      </ul>
+    </div>
     
-    <h3>Attendance Records</h3>
-   <table border="1">
+    <div class="Attendence">
+     <h3>Attendance Records</h3>
+      <table border="1">
         <tr><th>Student</th><th>Date</th><th>Status</th></tr>
         {% for record in attendance %}
             <tr><td>{{ record[1] }}</td><td>{{ record[2] }}</td><td>{{ record[3] }}</td></tr>
         {% endfor %}
-    </table>
+      </table>
+    </div>  
 </body>
 </html>
