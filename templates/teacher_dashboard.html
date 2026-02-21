@@ -28,13 +28,19 @@
 
     <div class="Mark_Attendence">
     <h3>Mark Attendence</h3>
+        
      <form method="POST">
+        <label for="student_id">Select Student:</label> 
         <select name="student_id" required>
             {% for student in students %}
                 <option value="{{ student[0] }}">{{ student[1] }} ({{ student[2] }})</option>
             {% endfor %}
         </select><br>
-        <input type="date" name="date" required><br>
+         
+         <label for="date">Date:</label>
+         <input type="date" name="date" required><br>
+         
+        <label for="status">Attendance Status:</label>
         <select name="status" required>
             <option value="present">Present</option>
             <option value="absent">Absent</option>
