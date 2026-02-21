@@ -3,16 +3,18 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Student Dashboard</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Student Dashboard</title>
    <link rel="stylesheet" href="{{ url_for('static', filename='stylestudent.css') }}">
 </head>
 <body>
     <nav class="navbar">
   <h1>student dashboard</h1>
     </nav>
-    <h2>Welcome, {{ user_info[0] }} (Roll: {{ user_info[1] }})</h2>
-    <a href="{{ url_for('logout') }}">Logout</a>
-
+    <div class="welcomebox">
+       <h2>Welcome, {{ user_info[0] }} (Roll: {{ user_info[1] }})</h2>
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </div>
     <div class="Notices">
     <h3>Notices</h3>
     <ul>
