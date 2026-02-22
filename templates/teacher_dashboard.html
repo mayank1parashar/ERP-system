@@ -19,18 +19,16 @@
     </div>
 
     <div class="Add_Notices">
-     <h3>Add Notice</h3>
+     <h2>Add Notice</h2>
       <form method="POST">
         <input type="text" name="title" placeholder="Title" required><br>
         <textarea name="content" placeholder="Content" required></textarea><br>
-    
         <button type="submit" name="add_notice">Add Notice</button>
      </form>
     </div>
 
     <div class="Mark_Attendence">
-    <h3>Mark Attendence</h3>
-        
+    <h2>Mark Attendence</h2>
      <form method="POST">
         <label for="student_id">Select Student:</label> 
         <select name="student_id" required>
@@ -51,7 +49,7 @@
      </form>
     </div>
     <div class="Notices">
-     <h3>Notices</h3>
+     <h2>Notices</h2>
       <ul>
         {% for notice in notices %}
             <li><strong>{{ notice[1] }}</strong>: {{ notice[2] }} ({{ notice[3] }})</li>
@@ -60,7 +58,7 @@
     </div>
     
     <div class="Attendence">
-     <h3>Attendance Records</h3>
+     <h2>Attendance Records</h2>
       <table border="1">
         <tr><th>Student</th><th>Date</th><th>Status</th></tr>
         {% for record in attendance %}
