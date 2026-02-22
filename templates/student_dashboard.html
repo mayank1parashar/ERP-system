@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,29 +8,31 @@
 </head>
 <body>
     <nav class="navbar">
-  <h1>student dashboard</h1>
+  <h1>Student Dashboard</h1>
     </nav>
+    
     <div class="welcomebox">
        <h2>Welcome, {{ user_info[0] }} (Roll: {{ user_info[1] }})</h2>
         <a href="{{ url_for('logout') }}">Logout</a>
     </div>
+    
     <div class="Notices">
-    <h3>Notices</h3>
-    <ul>
+     <h2>Notices</h2>
+      <ul>
         {% for notice in notices %}
             <li><strong>{{ notice[0] }}</strong>: {{ notice[1] }} ({{ notice[2] }})</li>
         {% endfor %}
-    </ul>
+      </ul>
     </div>
 
     <div class="Attendence">
-    <h3>Attendance</h3>
-  <table border="1">
+     <h3>Attendence</h3>
+      <table border="1">
         <tr><th>Date</th><th>Status</th></tr>
         {% for record in attendance %}
             <tr><td>{{ record[0] }}</td><td>{{ record[1] }}</td></tr>
         {% endfor %}
-    </table>
+      </table>
     </div>
     
 </body>
