@@ -9,11 +9,20 @@ margin: 20px auto;
 }
 
 .welcomebox {
- background-color: #30abd4; /* dark blue */
+background-color: #30abd4; /* dark blue */
 color: rgb(0, 0, 0);
 padding: 10px;
 margin: 20px auto;
- border-radius: 5px;
- width:75% ;
- text-align: center;
+border-radius: 5px;
+width:75% ;
+text-align: center;
+}
+
+.Notices {
+background-color: #30abd4; /* dark blue */
+color: rgb(0, 0, 0);
+padding: 10px;
+margin: 20px auto;
+border-radius: 5px;
+width:80% ;
 }
