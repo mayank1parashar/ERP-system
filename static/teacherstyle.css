@@ -41,7 +41,15 @@ text-align: center;
 }
 
 .Notices{
-
+ background-color: rgb(209, 238, 238);
+ width: 80%;
+margin: 20px auto;
+padding: 10px;
+border-radius: 5px;
+ box-shadow: inset 0 0 10px rgba(0, 128, 0, 0.5);
+ align-content: center;
+ align-items: center;
+ 
 }
 
 .Attendence{
