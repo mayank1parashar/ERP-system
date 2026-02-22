@@ -13,7 +13,8 @@
     
     <div class="welcomebox">
        <h2>Welcome, {{ user_info[0] }} (Roll: {{ user_info[1] }})</h2>
-        <a href="{{ url_for('logout') }}">Logout</a>
+       <button type="submit" class="w-full py-2 px-4 rounded-md font-medium text-sm logout-btn border mb-4">
+       <a href="{{ url_for('logout') }}">Logout</a>
     </div>
     
     <div class="Notices">
