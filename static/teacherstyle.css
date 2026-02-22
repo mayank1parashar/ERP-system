@@ -31,7 +31,13 @@ margin: 20px auto;
 }
 
 .Mark_Attendence{
-
+ background-color: rgb(209, 238, 238);
+ margin:  auto;
+ padding: 10px ;
+ width: 70%;
+ border-radius: 5px;
+ box-shadow: inset 0 0 10px rgba(0, 128, 0, 0.5);
+text-align: center;
 }
 
 .Notices{
