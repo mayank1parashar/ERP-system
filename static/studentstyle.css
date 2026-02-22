@@ -1,7 +1,9 @@
 .navbar {
-    background-color: #30abd4; /* dark blue */
-color: white;
+background-color: #30abd4; /* dark blue */
+color: rgb(0, 0, 0);
 padding: 10px;
-text-align: center;
-margin-bottom: 20px;
+margin: 20px auto;
+ border-radius: 5px;
+ width:75% ;
+ text-align: center;
 }
