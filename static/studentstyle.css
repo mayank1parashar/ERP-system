@@ -1,38 +1,38 @@
 .navbar {
-background-color: #30abd4; /* dark blue */
-color: rgb(0, 0, 0);
-padding: 10px;
-margin: 20px auto;
+ background-color: #30abd4; /* dark blue */
+ color: rgb(0, 0, 0);
+ padding: 10px;
+ margin: 20px auto;
  border-radius: 5px;
  width:75% ;
  text-align: center;
 }
 
 .welcomebox {
-background-color: #30abd4; /* dark blue */
-color: rgb(0, 0, 0);
-padding: 10px;
-margin: 20px auto;
-border-radius: 5px;
-width:75% ;
-text-align: center;
+ background-color: #30abd4; /* dark blue */
+ color: rgb(0, 0, 0);
+ padding: 10px;
+ margin: 20px auto;
+ border-radius: 5px;
+ width:75% ;
+ text-align: center;
 }
 
 .Notices {
-background-color: #30abd4; /* dark blue */
-color: rgb(0, 0, 0);
-padding: 10px;
-margin: 20px auto;
-border-radius: 5px;
-width:80% ;
+ background-color: #30abd4; /* dark blue */
+ color: rgb(0, 0, 0);
+ padding: 10px;
+ margin: 20px auto;
+ border-radius: 5px;
+ width:80% ;
 }
 
 .Attendence {
-background-color: #30abd4; /* dark blue */
-color: rgb(0, 0, 0);
-padding: 10px;
-margin: 20px auto;
-border-radius: 5px;
-width:75% ;
-text-align: center;
+ background-color: #30abd4; /* dark blue */
+ color: rgb(0, 0, 0);
+ padding: 10px;
+ margin: 20px auto;
+ border-radius: 5px;
+ width:75% ;
+ text-align: center;
 }
