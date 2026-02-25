@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ERP Login Page</title>
+	     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+		  <h1>Institute ERP</h1>
+		<h2>Login Page</h2>
+		</nav>	
+   <form method="POST">
+        <div class="username">
+            <input type="text" name="username" placeholder="Username" required><br>
+        </div>
+        <div class="password">
+             <input type="password" name="password" placeholder="Password" required><br>
+        </div>
+        <div class="submit">
+             <button type="submit">Login</button>
+        </div>
+    </form>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>{% for message in messages %}<li>{{ message }}</li>{% endfor %}</ul>
+        {% endif %}
+    {% endwith %}
+</body>
+
+</html>
+
+
+
+
+
+

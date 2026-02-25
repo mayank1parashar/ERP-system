@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Teacher Dashboard</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="{{ url_for('static', filename='teacherstyle.css') }}">
+</head>
+<body>
+
+    <div class="navbar">
+     <h1>Teacher Dashboard</h1>
+    </div>
+
+     <div class="logout-box">
+     <button type="submit" class="w-full py-2 px-4 rounded-md font-medium text-sm logout-btn border mb-4">
+      <a href="{{ url_for('logout') }}">Logout</a>
+    </button>
+    </div>
+
+    <div class="Add_Notices">
+     <h2>Add Notice</h2>
+      <form method="POST">
+        <input type="text" name="title" placeholder="Title" required><br>
+        <textarea name="content" placeholder="Content" required></textarea><br>
+        <button type="submit" name="add_notice">Add Notice</button>
+     </form>
+    </div>
+
+    <div class="Mark_Attendence">
+    <h2>Mark Attendence</h2>
+     <form method="POST">
+        <label for="student_id">Select Student:</label> 
+        <select name="student_id" required>
+            {% for student in students %}
+                <option value="{{ student[0] }}">{{ student[1] }} ({{ student[2] }})</option>
+            {% endfor %}
+        </select><br>
+         
+         <label for="date">Date:</label>
+         <input type="date" name="date" required><br>
+         
+        <label for="status">Attendance Status:</label>
+        <select name="status" required>
+            <option value="present">Present</option>
+            <option value="absent">Absent</option>
+        </select><br>
+        <button type="submit" name="mark_attendance">Mark</button>
+     </form>
+    </div>
+    <div class="Notices">
+     <h2>Notices</h2>
+      <ul>
+        {% for notice in notices %}
+            <li><strong>{{ notice[1] }}</strong>: {{ notice[2] }} ({{ notice[3] }})</li>
+        {% endfor %}
+      </ul>
+    </div>
+    
+    <div class="Attendence">
+     <h2>Attendance Records</h2>
+      <table border="1">
+        <tr><th>Student</th><th>Date</th><th>Status</th></tr>
+        {% for record in attendance %}
+            <tr><td>{{ record[1] }}</td><td>{{ record[2] }}</td><td>{{ record[3] }}</td></tr>
+        {% endfor %}
+      </table>
+    </div>  
+</body>
+</html>
