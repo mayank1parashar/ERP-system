@@ -1,65 +1,74 @@
 .navbar{
- background-color: rgb(209, 238, 238);
- margin: 20px auto;
- padding: 5px ;
- width: 70%;
+ background-color: rgba(50, 184, 198, 1);
+ margin: 15px auto;
+ padding: 10px ;
+ width: 75%;
  border-radius: 5px;
- box-shadow: inset 0 0 10px rgba(0, 128, 0, 0.5);
+ box-shadow: inset 0 0 10px rgba(29, 116, 128, 1);
  text-align: center;
+ font-size: large;
 }
 
 .logout-box{
- background-color: rgb(209, 238, 238);
- margin: 20px auto;
+ background-color: rgba(50, 184, 198, 1);
+ margin: 15px auto;
  padding: 10px ;
- width: 70%;
+ width: 75%;
  border-radius: 5px;
- box-shadow: inset 0 0 10px rgba(0, 128, 0, 0.5);
+ box-shadow: inset 0 0 10px rgba(29, 116, 128, 1);
  align-items: center;
  text-align: center;
 }
 
 .Add_Notices{
- background-color: rgb(209, 238, 238);
-margin: 20px auto;
+ background-color: rgba(50, 184, 198, 1);
+margin: 15px auto;
  padding: 10px ;
- width: 70%;
+ width: 75%;
  border-radius: 5px;
- box-shadow: inset 0 0 10px rgba(0, 128, 0, 0.5);
+ box-shadow: inset 0 0 10px rgba(29, 116, 128, 1);
  align-items: center;
  text-align: center;
 }
 
 .Mark_Attendence{
- background-color: rgb(209, 238, 238);
- margin:  auto;
+ background-color: rgba(50, 184, 198, 1);
+ margin: 15px auto;
  padding: 10px ;
- width: 70%;
+ width: 75%;
  border-radius: 5px;
- box-shadow: inset 0 0 10px rgba(0, 128, 0, 0.5);
+ box-shadow: inset 0 0 10px rgba(29, 116, 128, 1);
 text-align: center;
 }
 
 .Notices{
- background-color: rgb(209, 238, 238);
- width: 80%;
-margin: 20px auto;
-padding: 10px;
-border-radius: 5px;
- box-shadow: inset 0 0 10px rgba(0, 128, 0, 0.5);
+ background-color: rgba(50, 184, 198, 1);
+ width: 75%;
+ margin: 15px auto;
+ padding: 10px;
+ border-radius: 5px;
+ box-shadow: inset 0 0 10px rgba(29, 116, 128, 1);
  align-content: center;
  align-items: center;
  
 }
 
 .Attendence{
- background-color: rgb(209, 238, 238);
- margin: 20px auto;
+ background-color: rgba(50, 184, 198, 1);
+ margin: 15px auto;
  padding: 10px ;
- width: 70%;
+ width: 75%;
  border-radius: 5px;
- box-shadow: inset 0 0 10px rgba(0, 128, 0, 0.5);
+ box-shadow: inset 0 0 15px rgba(29, 116, 128, 1);
  align-content: center;
  align-items: center;
  text-align: center;
+}
+
+body {
+    background-color: #21808d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
